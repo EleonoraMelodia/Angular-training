@@ -1,0 +1,18 @@
+
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group  class="cards" *ngFor="let food of data; index as i" >
+<div   [ngClass]="{'salty' : food.taste === 'salty', 'sweet' : food.taste === 'sweet'}">
+      <mat-card-title>{{food.name }}</mat-card-title>
+      <mat-card-subtitle>{{food.taste}}</mat-card-subtitle>
+      <img [ngStyle]="{'border-radius' : '100px'}" mat-card-md-image src={{food.src}} alt="Image of foods">
+      <h3>{{i}}</h3>
+</div>    
+</mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+ 
+  </mat-card-content>
+</mat-card>
