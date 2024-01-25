@@ -1,2 +1,14 @@
-<app-new-component (sendDataEvent)="onGetData($event)" [data]="foods" ></app-new-component>
-<app-second ></app-second>
+<div class="container">
+  <app-new-component
+    (sendDataEvent)="onGetData($event)"
+    [data]="foods"
+  ></app-new-component>
+  <app-second></app-second>
+  <h2>Chose your favorite color</h2>
+  <div>
+    <input type="radio" name="highlightColor" (click)="handleColorChange('red')"> Red 
+    <input type="radio" name="highlightColor" (click)="handleColorChange('purple')"> Purple 
+    <input type="radio" name="highlightColor" (click)="handleColorChange('hotpink')"> Hot pink
+  </div>
+  <p [appHightlight]="color" defaultColor="yellow" > I'm highlighted! </p>
+</div>

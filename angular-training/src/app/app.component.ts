@@ -8,6 +8,7 @@ import { log } from "console";
 })
 export class AppComponent {
   title = "angular-training";
+  color = '';
 
   foods = [
     {
@@ -58,4 +59,9 @@ export class AppComponent {
   onGetData(value: object) {
     console.log(value);
   }
+
+  handleColorChange(color: string) {
+  this.color = color
+}
+
 }
