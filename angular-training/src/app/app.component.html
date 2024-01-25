@@ -1,1 +1,2 @@
-<app-new-component [data]="foods" ></app-new-component>
+<app-new-component (sendDataEvent)="onGetData($event)" [data]="foods" ></app-new-component>
+<app-second ></app-second>
