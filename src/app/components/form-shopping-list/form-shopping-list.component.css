@@ -1,0 +1,10 @@
+form {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+.mat-label {
+  color: black;
+}

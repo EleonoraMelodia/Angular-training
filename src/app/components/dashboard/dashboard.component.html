@@ -1,0 +1,47 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <mat-list role="list">
+      <mat-list-item
+        role="listitem"
+        routerLink="pagina1"
+        routerLinkActive="active"
+        >Pagina 1</mat-list-item
+      >
+      <mat-list-item
+        role="listitem"
+        routerLink="pagina2"
+        routerLinkActive="active"
+        >Pagina 2</mat-list-item
+      >
+      <mat-list-item
+        role="listitem"
+        routerLink="pagina3"
+        routerLinkActive="active"
+        >Pagina 3</mat-list-item
+      >
+    </mat-list>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <span class="example-spacer"></span>
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>logout</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="page-container">
+      <router-outlet> </router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

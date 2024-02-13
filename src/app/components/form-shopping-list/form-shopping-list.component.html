@@ -1,0 +1,43 @@
+<form #shoppingAddElement="ngForm" (ngSubmit)="onSubmit(shoppingAddElement)">
+  <mat-form-field appearance="outline">
+    <mat-label class="label">Name</mat-label>
+    <input
+      matInput
+      placeholder="ex. bananas"
+      name="name"
+      ngModel
+      required
+    />
+    <mat-icon matSuffix
+      ><span class="material-icons-outlined">shopping_basket</span></mat-icon
+    >
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Quantity</mat-label>
+    <input
+      matInput
+      placeholder="ex. 3"
+      name="quantity"
+      type="number"
+      ngModel
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Where</mat-label>
+    <input matInput placeholder="ex. grocery" name="where" ngModel required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>When</mat-label>
+    <input matInput placeholder="ex. fast!" name="when" ngModel required />
+  </mat-form-field>
+
+  <button mat-fab color="accent" type="submit" aria-label="Submit form">
+    <mat-icon
+      ><span class="material-icons-outlined">add_shopping_cart</span></mat-icon
+    >
+  </button>
+</form>
